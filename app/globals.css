@@ -16,6 +16,68 @@
   }
 }
 
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 100%;
+  border: 2px solid #000000;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+input[type="checkbox"] + label:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 32px;
+  height: 100%;
+  background-color: #000;
+  opacity: 0%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: 0.2s ease;
+}
+
+input[type="checkbox"]:checked + label:after {
+  opacity: 100%;
+  background-color: #000;
+  transform: scaleX(1);
+}
+
+::selection {
+  background-color: #34d399;
+  color: #171717;
+}
+
+::-moz-selection {
+  background-color: #34d399;
+  color: #171717;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #242424;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
