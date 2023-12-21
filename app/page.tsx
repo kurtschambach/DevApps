@@ -9,6 +9,7 @@ import { topics } from "./topics";
 
 // TODO: add counter to topic, how any apps in one topic
 // TODO: make a and / or switch for filter
+// TODO: request apps button
 
 const App = () => {
   const [selectedTopics, setSelectedTopics] = useState<number[]>([]);
