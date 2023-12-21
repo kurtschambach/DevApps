@@ -4,43 +4,21 @@ import AppTile from "@/components/AppTile";
 import Topic from "@/components/Topic";
 import Link from "next/link";
 import React, { useState } from "react";
+import { apps } from "./apps";
+import { topics } from "./topics";
 
-export type TopicType = {
-  id: number;
-  title: string;
-};
-
-export type AppType = {
-  id: number;
-  name: string;
-  url: string;
-  topics: number[];
-  iconUrl?: string;
-};
 // TODO: add counter to topic, how any apps in one topic
-
-const topics: TopicType[] = [
-  { id: 0, title: "Type Quicker" },
-  { id: 1, title: "Display Code" },
-  { id: 2, title: "API" },
-  { id: 3, title: "News" },
-  { id: 4, title: "Icons" },
-];
-
-const apps: AppType[] = [
-  { id: 0, name: "MonkeyType", url: "https://monkeytype.com", topics: [0] },
-  { id: 1, name: "Ray.so", url: "https://ray.so", topics: [1] },
-  { id: 2, name: "Spotify API", url: "https://", topics: [2] },
-  { id: 3, name: "Dev News", url: "https://", topics: [3] },
-  { id: 4, name: "Heroicons", url: "https://heroicons.com", topics: [4] },
-];
+// TODO: make a and / or switch for filter
 
 const App = () => {
   const [selectedTopics, setSelectedTopics] = useState<number[]>([]);
 
-  const filteredApps = apps.filter((app) =>
-    selectedTopics.every((topicId) => app.topics.includes(topicId))
-  );
+  const filteredApps =
+    selectedTopics.length === 0
+      ? apps
+      : apps.filter((app) =>
+          selectedTopics.some((topicId) => app.topics.includes(topicId))
+        );
 
   return (
     <div className="h-full w-full">
@@ -65,9 +43,17 @@ const App = () => {
         ))}
       </div>
 
-      <div className="sticky bg-black/30 p-2 px-3 backdrop-blur-xl bottom-2 mt-10 text-center w-full dark:text-amber-200 text-amber-800">
-        Made with {"<3"} by{" "}
-        <Link href="https://a3chron.vercel.app/">a3chron</Link>
+      <div className="sticky bottom-2 mt-10 text-center w-full dark:text-white text-black">
+        <span className="bg-transparent rounded-xl p-2 px-4 backdrop-blur-xl ">
+          Made with {"<3"} by{" "}
+          <Link
+            className="dark:text-amber-200 text-amber-800 no-underline hover:underline decoration-amber-200"
+            target="_blank"
+            href="https://a3chron.vercel.app/"
+          >
+            a3chron
+          </Link>
+        </span>
       </div>
     </div>
   );

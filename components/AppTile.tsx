@@ -1,4 +1,4 @@
-import { AppType } from "@/app/page";
+import { AppType } from "@/app/apps";
 import Link from "next/link";
 
 const AppTile = ({ app }: { app: AppType }) => {

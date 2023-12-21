@@ -1,4 +1,4 @@
-import { TopicType } from "@/app/page";
+import { TopicType } from "@/app/topics";
 
 const Topic = ({
   topic,
