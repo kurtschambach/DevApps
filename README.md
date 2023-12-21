@@ -1,4 +1,9 @@
+# DevApps
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+I've just started working on the app. As you can see with the Todos in my code, i will add an icon-fetcher and a "request apps" button soon.
+Also possibilities for filtering will improve slightly.
 
 ## Getting Started
 
@@ -34,3 +39,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## Developer
+
+My Portfolio (e.g some of my other apps): [a3chron](https://kurtschambach.vercel.app/)
