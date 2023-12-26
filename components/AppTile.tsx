@@ -1,6 +1,10 @@
 import { AppType } from "@/data/apps";
 
-const AppTile = ({ app, setOpen }: { app: AppType; setOpen: () => void }) => {
+type AppTileProps = {
+  app: AppType;
+  setOpen: () => void;
+};
+export default function AppTile({ app, setOpen }: AppTileProps) {
   return (
     <div
       onClick={setOpen}
@@ -17,6 +21,4 @@ const AppTile = ({ app, setOpen }: { app: AppType; setOpen: () => void }) => {
       </div>
     </div>
   );
-};
-
-export default AppTile;
+}
