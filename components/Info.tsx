@@ -25,3 +25,5 @@ export default function Info({ text, url, onHide }: InfoProps) {
     </div>
   );
 }
+
+
