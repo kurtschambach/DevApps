@@ -4,6 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 I've just started working on the app. As you can see with the Todos in my code, i will add an icon-fetcher and a "request apps" button soon.
 Also possibilities for filtering will improve slightly.
+And Styling oc
 
 ## Getting Started
 
