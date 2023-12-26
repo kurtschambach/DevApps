@@ -1,4 +1,4 @@
-import { TopicType } from "@/app/topics";
+import { TopicType } from "@/data/topics";
 
 const Topic = ({
   topic,

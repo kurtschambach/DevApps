@@ -4,8 +4,8 @@ import AppTile from "@/components/AppTile";
 import Topic from "@/components/Topic";
 import Link from "next/link";
 import React, { useState } from "react";
-import { apps } from "./apps";
-import { topics } from "./topics";
+import { apps } from "@/data/apps";
+import { topics } from "@/data/topics";
 import Info from "@/components/Info";
 import { Github } from "lucide-react";
 

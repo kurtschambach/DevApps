@@ -1,4 +1,4 @@
-import { AppType } from "@/app/apps";
+import { AppType } from "@/data/apps";
 
 const AppTile = ({ app, setOpen }: { app: AppType; setOpen: () => void }) => {
   return (
