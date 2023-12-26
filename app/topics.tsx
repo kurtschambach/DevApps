@@ -12,4 +12,5 @@ export const topics: TopicType[] = [
   { id: 5, title: "Design" },
   { id: 6, title: "Free Time" },
   { id: 7, title: "Home/ Setup" },
+  { id: 8, title: "Frameworks" },
 ];

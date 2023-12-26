@@ -87,3 +87,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@font-face {
+  font-family: "IBM Plex";
+  src: url("../fonts/ibm_plex/IBM-Plex-Mono/fonts/complete/otf/IBMPlexMono-Regular.otf")
+    format("opentype");
+}

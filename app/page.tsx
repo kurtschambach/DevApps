@@ -6,6 +6,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { apps } from "./apps";
 import { topics } from "./topics";
+import Info from "@/components/Info";
+import { Github } from "lucide-react";
 
 // TODO: add counter to topic, how any apps in one topic
 // TODO: make a and / or switch for filter
@@ -13,6 +15,7 @@ import { topics } from "./topics";
 
 const App = () => {
   const [selectedTopics, setSelectedTopics] = useState<number[]>([]);
+  const [openApp, setOpenApp] = useState<null | number>(null);
 
   const filteredApps =
     selectedTopics.length === 0
@@ -23,8 +26,22 @@ const App = () => {
 
   return (
     <div className="h-full w-full">
-      <div className="z-20 mb-8">
+      {openApp !== null && (
+        <Info
+          text={apps[openApp].description}
+          url={apps[openApp].url}
+          onHide={() => setOpenApp(null)}
+        />
+      )}
+      <div className="z-20 mb-8 w-full flex flex-row items-center justify-between">
         <h1 className="text-2xl font-bold mb-4">Dev Apps</h1>
+        <Link
+          target="_blank"
+          href="https://github.com/kurtschambach/devApps/"
+          className="text-white/80 hover:text-white duration-150"
+        >
+          <Github />
+        </Link>
       </div>
 
       <div className="flex space-x-4 pb-8 border-b-2 border-b-amber-400 overflow-x-scroll">
@@ -40,11 +57,11 @@ const App = () => {
 
       <div className="flex flex-row flex-wrap items-center justify-center gap-4 mt-10 overflow-y-auto">
         {filteredApps.map((app) => (
-          <AppTile key={app.id} app={app} />
+          <AppTile key={app.id} app={app} setOpen={() => setOpenApp(app.id)} />
         ))}
       </div>
 
-      <div className="sticky bottom-2 mt-10 text-center w-full dark:text-white text-black">
+      <div className="fixed bottom-2 sm:bottom-4 mt-10 text-center w-full dark:text-white text-black">
         <span className="bg-transparent rounded-xl p-2 px-4 backdrop-blur-xl ">
           Made with {"<3"} by{" "}
           <Link

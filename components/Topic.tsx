@@ -28,7 +28,7 @@ const Topic = ({
       />
       <label
         htmlFor={`${topic.id}`}
-        className="flex items-center rounded-xl w-fit p-4 px-6 bg-amber-400 text-black font-bold font-mono"
+        className="flex items-center rounded-xl w-fit p-4 px-6 bg-amber-400 text-black font-bold font-plex"
       >
         <span className="ml-2">{topic.title}</span>
       </label>

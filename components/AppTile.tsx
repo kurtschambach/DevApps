@@ -1,13 +1,10 @@
 import { AppType } from "@/app/apps";
-import Link from "next/link";
 
-const AppTile = ({ app }: { app: AppType }) => {
+const AppTile = ({ app, setOpen }: { app: AppType; setOpen: () => void }) => {
   return (
-    <Link
-      target="_blank"
-      href={app.url}
-      key={app.id}
-      className="bg-transparent backdrop-blur-xl border-2 border-amber-300 p-6 w-40 h-40 rounded-3xl flex flex-col items-center justify-center"
+    <div
+      onClick={setOpen}
+      className="bg-transparent backdrop-blur-xl border-2 border-amber-300 p-6 w-40 h-40 rounded-3xl flex flex-col items-center justify-center cursor-pointer"
     >
       <div>
         <img
@@ -18,7 +15,7 @@ const AppTile = ({ app }: { app: AppType }) => {
       <div>
         <h2 className="text-md font-bold">{app.name}</h2>
       </div>
-    </Link>
+    </div>
   );
 };
 
