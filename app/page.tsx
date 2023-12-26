@@ -4,8 +4,8 @@ import AppTile from "@/components/AppTile";
 import Topic from "@/components/Topic";
 import Link from "next/link";
 import React, { useState } from "react";
-import { apps } from "./apps";
-import { topics } from "./topics";
+import { apps } from "@/data/apps";
+import { topics } from "@/data/topics";
 import Info from "@/components/Info";
 import { Github } from "lucide-react";
 
@@ -13,7 +13,7 @@ import { Github } from "lucide-react";
 // TODO: make a and / or switch for filter
 // TODO: request apps button
 
-const App = () => {
+export default function App() {
   const [selectedTopics, setSelectedTopics] = useState<number[]>([]);
   const [openApp, setOpenApp] = useState<null | number>(null);
 
@@ -21,7 +21,7 @@ const App = () => {
     selectedTopics.length === 0
       ? apps
       : apps.filter((app) =>
-          selectedTopics.some((topicId) => app.topics.includes(topicId))
+          selectedTopics.some((topicId) => app.topics.includes(topicId)),
         );
 
   return (
@@ -75,6 +75,4 @@ const App = () => {
       </div>
     </div>
   );
-};
-
-export default App;
+}

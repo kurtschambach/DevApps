@@ -1,14 +1,15 @@
-import { TopicType } from "@/app/topics";
+import { TopicType } from "@/data/topics";
 
-const Topic = ({
-  topic,
-  selectedTopics,
-  setSelectedTopics,
-}: {
+type TopicProps = {
   topic: TopicType;
   selectedTopics: number[];
   setSelectedTopics: React.Dispatch<React.SetStateAction<number[]>>;
-}) => {
+};
+export default function Topic({
+  topic,
+  selectedTopics,
+  setSelectedTopics,
+}: TopicProps) {
   return (
     <>
       <input
@@ -34,6 +35,4 @@ const Topic = ({
       </label>
     </>
   );
-};
-
-export default Topic;
+}

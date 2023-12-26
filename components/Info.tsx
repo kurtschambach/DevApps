@@ -1,18 +1,13 @@
-"use client";
-
 import CloseButton from "./CloseButton";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
-const Info = ({
-  text,
-  url,
-  onHide,
-}: {
+type InfoProps = {
   text: string;
   url: string;
   onHide: () => void;
-}) => {
+};
+export default function Info({ text, url, onHide }: InfoProps) {
   return (
     <div
       onClick={onHide}
@@ -29,6 +24,6 @@ const Info = ({
       </div>
     </div>
   );
-};
+}
 
-export default Info;
+
