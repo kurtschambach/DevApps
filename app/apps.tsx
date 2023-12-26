@@ -7,6 +7,8 @@ export type AppType = {
   iconUrl?: string;
 };
 
+// TODO: add a \n to <br /> changer?
+
 export const apps: AppType[] = [
   {
     id: 0,
@@ -34,7 +36,7 @@ export const apps: AppType[] = [
     name: "Dev Daily",
     url: "https://app.daily.dev/",
     topics: [3],
-    description: "news",
+    description: "developer news",
   },
   {
     id: 4,
@@ -63,14 +65,14 @@ export const apps: AppType[] = [
     url: "https://chess.com",
     topics: [6],
     description:
-      "The name says everyting br there is no going back (maybe you'll turn crazy, but it's worth a try)",
+      "The name says everyting (think of a <br />) there is no going back (maybe you'll turn crazy, but it's worth a try)",
   },
   {
     id: 8,
     name: "PlantOrg",
     url: "https://plant-organizer.vercel.app",
     topics: [7, 0],
-    description: "One of my apps, not useable yet",
+    description: "One of my apps, not useable yet :/ but im working on it",
   },
   {
     id: 9,
@@ -84,13 +86,13 @@ export const apps: AppType[] = [
     name: "Next.js",
     url: "https://next.org",
     topics: [8],
-    description: "You propably know",
+    description: "You should know",
   },
   {
     id: 11,
     name: "Lucide",
     url: "https://lucide.dev",
     topics: [4],
-    description: "Wonderfull icons, easy integration to many franeworks",
+    description: "Wonderfull icons, easy integration to many frameworks",
   },
 ];
