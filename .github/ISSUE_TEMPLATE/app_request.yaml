@@ -1,0 +1,30 @@
+name: 'App Request'
+description: 'Fill out the form to request a new app'
+title: 'APP REQUEST: '
+labels: 'app-request'
+assignees: kurtschambach
+body:
+- type: input
+  attributes:
+    label: Name
+    description: Name of the app you want to request
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Description
+    description: A short description of the App.
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: Link
+    description: Please add a link, so we can find the app quick
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Additional context
+    description: Add any other context about your request here.
+  validations:
+    required: false
