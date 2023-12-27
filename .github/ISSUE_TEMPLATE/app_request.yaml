@@ -1,13 +1,13 @@
-name: App Request
-about: Infos about the app
-title: ''
-labels: 'app request'
+name: 'App Request'
+description: 'Fill out the form to request a new app'
+title: 'APP REQUEST: '
+labels: 'app-request'
 assignees: kurtschambach
 body:
 - type: input
   attributes:
     label: Name
-    description: Name of the App you want to request
+    description: Name of the app you want to request
 - type: textarea
   attributes:
     label: Description
