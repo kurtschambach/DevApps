@@ -8,6 +8,8 @@ body:
   attributes:
     label: Name
     description: Name of the app you want to request
+  validations:
+    required: true
 - type: textarea
   attributes:
     label: Description
