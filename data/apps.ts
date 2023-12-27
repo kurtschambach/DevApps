@@ -84,9 +84,9 @@ export const apps: AppType[] = [
   {
     id: 10,
     name: "Next.js",
-    url: "https://next.org",
+    url: "https://nextjs.org/",
     topics: [8],
-    description: "You should know this one",
+    description: "You should know",
   },
   {
     id: 11,
