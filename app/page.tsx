@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import { apps } from "@/data/apps";
 import { topics } from "@/data/topics";
 import Info from "@/components/Info";
-import { Github } from "lucide-react";
+import { Github, Heart } from "lucide-react";
 
 // TODO: add counter to topic, how any apps in one topic
 // TODO: make a and / or switch for filter
@@ -61,11 +61,16 @@ export default function App() {
         ))}
       </div>
 
-      <div className="fixed bottom-2 sm:bottom-4 mt-10 text-center w-full dark:text-white text-black">
-        <span className="bg-transparent rounded-xl p-2 px-4 backdrop-blur-xl ">
-          Made with {"<3"} by{" "}
+      <div className="fixed bottom-2 sm:bottom-4 mt-10 flex flex-col items-center justify-center w-full h-fit dark:text-white text-black">
+        <span className="bg-transparent rounded-xl p-2 px-4 backdrop-blur-xl w-fit h-fit flex flex-row items-center justify-center gap-2">
+          Made with{" "}
+          <Heart
+            className="w-5 h-5 text-black dark:text-amber-400"
+            fill="#fbbf24"
+          />{" "}
+          by{" "}
           <Link
-            className="dark:text-amber-200 text-amber-800 no-underline hover:underline decoration-amber-200"
+            className="dark:text-amber-200 text-amber-600 no-underline hover:underline decoration-amber-600 dark:decoration-amber-200"
             target="_blank"
             href="https://a3chron.vercel.app/"
           >
