@@ -95,4 +95,25 @@ export const apps: AppType[] = [
     topics: [4],
     description: "Wonderfull icons, easy integration to many frameworks",
   },
+  {
+    id: 12,
+    name: "Supabase",
+    url: "https://supabase.com/",
+    topics: [9],
+    description: "good online DB, firebase alternative",
+  },
+  {
+    id: 13,
+    name: "Vercel",
+    url: "https://vercel.com",
+    topics: [10],
+    description: "good for quick deployments",
+  },
+  {
+    id: 14,
+    name: "Tailwind CSS",
+    url: "https://tailwindcss.com",
+    topics: [0, 5, 8],
+    description: "more efficient CSS",
+  },
 ];
