@@ -5,6 +5,7 @@ type AppTileProps = {
   setOpen: () => void;
 };
 export default function AppTile({ app, setOpen }: AppTileProps) {
+  const iconUrl = app.iconUrl ? app.iconUrl : `${app.url}/favicon.ico`;
   return (
     <div
       onClick={setOpen}
@@ -12,7 +13,7 @@ export default function AppTile({ app, setOpen }: AppTileProps) {
     >
       <div>
         <img
-          src={app.iconUrl}
+          src={iconUrl}
           className="mb-2 p-1 bg-amber-400/20 w-24 h-24 rounded-xl"
         />
       </div>
