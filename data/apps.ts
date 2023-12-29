@@ -65,7 +65,7 @@ export const apps: AppType[] = [
     url: "https://chess.com",
     topics: [6],
     description:
-      "The name says everyting (think of a <br />) there is no going back (maybe you'll turn crazy, but it's worth a try)",
+      "The name says everyting, \n there is no going back (maybe you'll turn crazy, but it's worth a try)",
   },
   {
     id: 8,
