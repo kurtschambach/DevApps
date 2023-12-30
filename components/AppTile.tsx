@@ -16,7 +16,9 @@ export default function AppTile({ app, setOpen }: AppTileProps) {
         <Image
           src={iconUrl}
           alt={`${app.name} icon`}
-          className="mb-2 p-1 bg-white/80 dark:bg-black/80 w-24 h-24 rounded-xl"
+          width="96"
+          height="96"
+          className="mb-2 p-1 bg-white/80 dark:bg-black/80 rounded-xl"
         />
       </div>
       <div>
