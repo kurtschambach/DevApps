@@ -116,4 +116,12 @@ export const apps: AppType[] = [
     topics: [0, 5, 8],
     description: "more efficient CSS",
   },
+  {
+    id: 15,
+    name: "HTTP Cats",
+    url: "https://http.cat/",
+    topics: [2, 6],
+    description: "Cats for status codes",
+    iconUrl: "https://http.cat/apple-touch-icon.png",
+  },
 ];
