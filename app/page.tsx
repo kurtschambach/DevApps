@@ -10,8 +10,9 @@ import Info from "@/components/Info";
 import { Github, Heart } from "lucide-react";
 
 // TODO: add counter to topic, how any apps in one topic
-// TODO: make a and / or switch for filter
-// TODO: request apps button
+// TODO: make a and / or switch for filter 
+// TODO: a tiles switcher -> big icons with name, or name with small favicon
+// TODO: request apps buttons
 
 export default function App() {
   const [selectedTopics, setSelectedTopics] = useState<number[]>([]);
