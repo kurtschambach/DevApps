@@ -133,4 +133,12 @@ export const apps: AppType[] = [
     description: "more efficient CSS",
     iconUrl: "https://tailwindcss.com/favicons/apple-touch-icon.png?v=3",
   },
+  {
+    id: 15,
+    name: "HTTP Cats",
+    url: "https://http.cat/",
+    topics: [2, 6],
+    description: "Cats for status codes",
+    iconUrl: "https://http.cat/apple-touch-icon.png",
+  },
 ];
