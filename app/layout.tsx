@@ -1,12 +1,11 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Metadata } from "next";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  robots: "follow, index",
   title: "DevApps",
-  description: "boost your productivity",
+  description: "collection of favourite apps",
 };
 
 export default function RootLayout({
@@ -16,7 +15,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <head>
+        <link rel="icon" href="/favicon.png" />
+        <link
+          rel="apple-touch-icon"
+          href="/apple-icon.png"
+        />
+      </head>
+      <body>
         <main className="w-[100vw] h-[100vh] bg-transparent p-8 font-plex">
           {children}
         </main>
