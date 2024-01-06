@@ -22,7 +22,7 @@ module.exports = {
       { hostname: "assets.vercel.com" },
       { hostname: "tailwindcss.com" },
       { hostname: "monkeytype" },
-      { hostname: "monkeytype" },
+      { hostname: "http.cat" },
     ],
   },
 };
