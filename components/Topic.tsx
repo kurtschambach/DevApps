@@ -31,7 +31,7 @@ export default function Topic({
         htmlFor={`${topic.id}`}
         className="flex items-center rounded-xl w-fit p-4 px-6 bg-amber-400 text-black font-bold font-plex"
       >
-        <span className="ml-2">{topic.title}</span>
+        <span className="ml-2 text-center">{topic.title}</span>
       </label>
     </>
   );
