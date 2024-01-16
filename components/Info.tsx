@@ -13,7 +13,7 @@ export default function Info({ text, url, onHide }: InfoProps) {
       onClick={onHide}
       className="z-40 bg-zinc-800/20 w-[100vw] h-[100vh] fixed top-0 left-0 backdrop-blur-sm flex flex-col items-center justify-center gap-4"
     >
-      <div className="bg-zinc-300/20 dark:bg-zinc-950/30 border-2 dark:border-0 border-black backdrop-blur-2xl rounded-3xl w-full md:w-96 h-fit z-50">
+      <div className="bg-zinc-300/20 dark:bg-zinc-950/30 border-2 dark:border-amber-300 border-black backdrop-blur-2xl rounded-3xl w-full md:w-96 h-fit z-50">
         <p className="text-black font-bold dark:text-white p-2 px-4 sm:p-10">
           {text}
         </p>
