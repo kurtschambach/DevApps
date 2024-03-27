@@ -1,16 +1,32 @@
 # DevApps
 
-> A collection of my favourite apps. (for developers)
->
-> Website: [DevApps](https://dev-apps.vercel.app/)
+A collection of my favourite apps.  
+I collected them as Apps for developers, but they may help other people too.
 
-> This is a [Next.js](https://nextjs.org/) project with Tailwind CSS.
+Website: [DevApps](https://dev-apps.vercel.app/)
 
-- I've just started working on the app. As you maybe saw with the todos in my code, i will add an icon-fetcher and a "request apps" button soon.
+---
+
+Please visit [Issues](https://github.com/kurtschambach/DevApps/issues/new/choose) 
+if you have any app/feature request, or if you found a bug.
+
+---
+
+- I've just started working on the app. As you maybe saw with the todos in my code, I will add an icon-fetcher and a "request apps" button soon.
 - Also possibilities for filtering will improve slightly.
 - And Styling oc
 
+---
+
+> This is a [Next.js](https://nextjs.org/) project with Tailwind CSS.
+
 ## Getting Started
+
+### Install Dependencies
+
+```bash
+pnpm i
+```
 
 ### Run the development server:
 
@@ -19,8 +35,6 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-If you get a Node error: [Node Errors](#node-version)
 
 ### Format Code
 
@@ -49,7 +63,7 @@ ERROR: This version of pnpm requires at least Node.js v16.14
 OR
 
 ```
-You are using Node.js 16.20.1. For Next.js, Node.js version >= v18.17.0 is required.
+You are using Node.js <node-version>. For Next.js, Node.js version >= v18.17.0 is required.
 ```
 
 please run (in the project root):
