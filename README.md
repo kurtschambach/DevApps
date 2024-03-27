@@ -1,7 +1,7 @@
 # DevApps
 
 A collection of my favourite apps.  
-I collected them as Apps for developers, but they may help other people too.
+I collected them as apps for developers, but they may help other people too.
 
 Website: [DevApps](https://dev-apps.vercel.app/)
 
