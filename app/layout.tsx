@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import "./globals.css";
 
-
 export const metadata: Metadata = {
   robots: "follow, index",
   title: "DevApps",
@@ -17,10 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.png" />
-        <link
-          rel="apple-touch-icon"
-          href="/apple-icon.png"
-        />
+        <link rel="apple-touch-icon" href="/apple-icon.png" />
       </head>
       <body>
         <main className="w-[100vw] h-[100vh] bg-transparent p-8 font-plex">

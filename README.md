@@ -7,7 +7,7 @@ Website: [DevApps](https://dev-apps.vercel.app/)
 
 ---
 
-Please visit [Issues](https://github.com/kurtschambach/DevApps/issues/new/choose) 
+Please visit [Issues](https://github.com/kurtschambach/DevApps/issues/new/choose)
 if you have any app/feature request, or if you found a bug.
 
 ---

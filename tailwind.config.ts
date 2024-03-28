@@ -17,6 +17,12 @@ const config: Config = {
       fontFamily: {
         plex: ["'IBM Plex'", ...defaultTheme.fontFamily.mono],
       },
+      colors: {
+        highlight: "#4b4f4e",
+        primary: "#f0a17f",
+        "bg-light": "#4b423f",
+        "bg-dark": "#312e34",
+      },
     },
   },
   plugins: [],
