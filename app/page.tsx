@@ -50,6 +50,12 @@ export default function App() {
         </Link>
       </div>
 
+      <div className="w-full flex flex-row flex-wrap items-center justify-center gap-6">
+        {filteredApps.map((app) => (
+          <AppTile app={app} setOpen={() => setOpenApp(app.id)} />
+        ))}
+      </div>
+
       <div className="fixed bottom-2 sm:bottom-4 mt-10 flex flex-col items-center justify-center w-full h-fit dark:text-white text-black">
         <span className="bg-transparent rounded-xl p-2 px-4 backdrop-blur-xl w-fit h-fit flex flex-row items-center justify-center gap-2">
           Made with{" "}

@@ -62,12 +62,12 @@ input[type="checkbox"]:checked + label:after {
 
 ::selection {
   background-color: #171717;
-  color: #fbbf24;
+  color: #f0a17f;
 }
 
 ::-moz-selection {
   background-color: #171717;
-  color: #fbbf24;
+  color: #f0a17f;
 }
 
 ::-webkit-scrollbar {

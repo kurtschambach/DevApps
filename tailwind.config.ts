@@ -20,8 +20,8 @@ const config: Config = {
       colors: {
         highlight: "#4b4f4e",
         primary: "#f0a17f",
-        "bg-light": "#4b423f",
-        "bg-dark": "#312e34",
+        light: "#4b423f",
+        dark: "#312e34",
       },
     },
   },
