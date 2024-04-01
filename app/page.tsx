@@ -29,6 +29,7 @@ export default function App() {
     <div className="h-full w-full">
       {openApp !== null && (
         <Info
+          title={apps[openApp].name}
           text={apps[openApp].description}
           url={apps[openApp].url}
           onHide={() => setOpenApp(null)}
@@ -52,7 +53,7 @@ export default function App() {
 
       <div className="w-full flex flex-row flex-wrap items-center justify-center gap-6">
         {filteredApps.map((app) => (
-          <AppTile app={app} setOpen={() => setOpenApp(app.id)} />
+          <AppTile key={app.id} app={app} setOpen={() => setOpenApp(app.id)} />
         ))}
       </div>
 
