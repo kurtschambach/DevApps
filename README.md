@@ -48,13 +48,13 @@ For more information about contibuting please see [Contributing](./CONTRIBUTING.
 
 ## Developer
 
-My Portfolio (if u wanna check out some of my other apps/projects): [a3chron](https://kurtschambach.vercel.app/)
+My Portfolio (if u wanna check out some of my other apps/projects): [a3chron](https://a3chron.vercel.app/)
 
 ## Common Errors
 
 ### Node version
 
-if you get
+If you get
 
 ```
 ERROR: This version of pnpm requires at least Node.js v16.14
