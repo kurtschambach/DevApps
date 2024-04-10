@@ -10,7 +10,7 @@ import Info from "@/components/Info";
 import { Github, Heart } from "lucide-react";
 
 // TODO: add counter to topic, how any apps in one topic
-// TODO: make a and / or switch for filter 
+// TODO: make a and / or switch for filter
 // TODO: a tiles switcher -> big icons with name, or name with small favicon
 // TODO: request apps buttons
 
@@ -36,7 +36,9 @@ export default function App() {
       )}
       <div className="z-20 mb-8 w-full flex flex-row items-center justify-between">
         <div className="flex flex-col items-center justify-center w-fit h-fit gap-0">
-          <h2 className="text-amber-600 dark:text-amber-300 text-lg font-bold pl-10">a3chron</h2>
+          <h2 className="text-amber-600 dark:text-amber-300 text-lg font-bold pl-10">
+            a3chron
+          </h2>
           <h1 className="text-2xl font-bold mb-4">Dev Apps</h1>
         </div>
         <Link

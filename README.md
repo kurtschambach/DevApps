@@ -7,7 +7,7 @@ Website: [DevApps](https://dev-apps.vercel.app/)
 
 ---
 
-Please visit [Issues](https://github.com/kurtschambach/DevApps/issues/new/choose) 
+Please visit [Issues](https://github.com/kurtschambach/DevApps/issues/new/choose)
 if you have any app/feature request, or if you found a bug.
 
 ---
@@ -48,13 +48,13 @@ For more information about contibuting please see [Contributing](./CONTRIBUTING.
 
 ## Developer
 
-My Portfolio (if u wanna check out some of my other apps/projects): [a3chron](https://kurtschambach.vercel.app/)
+My Portfolio (if u wanna check out some of my other apps/projects): [a3chron](https://a3chron.vercel.app/)
 
 ## Common Errors
 
 ### Node version
 
-if you get
+If you get
 
 ```
 ERROR: This version of pnpm requires at least Node.js v16.14
